@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body class="D-background">
+
+
+    <section>
+        <div class="shadow-lg  container text-center py-5 my-5 ">
+            <h1 class="text-color">Smart Login System</h1>
+            <form action="">
+                <input type="email" name="email" id="email" class="form-control input-color text-light" placeholder="enter your email">
+                <br>
+                <input type="password" name="password" id="password" class="form-control input-color text-light" placeholder="enter your password">
+               <br>
+                <button class="text-color btn border rounded " id="login">logIn</button>
+            </form>
+            <br>
+            <p class="text-danger alert d-none" id="invalid">incorrect email or password</p>
+            <p class="text-danger alert d-none" id="empty">All Input is requrired</p>
+            <p class="text-light h5">Don’t have an account? <a href="./signUp.html" class="text-decoration-none text-light">Sign Up</a> </p>
+        </div>
+    </section>
+    
+    <script src="js/login.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

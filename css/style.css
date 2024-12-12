@@ -1,0 +1,16 @@
+.D-background{
+    background-color:rgb(33, 48, 58);
+    
+}
+.text-color{
+ color: rgb(23, 162, 184) !important ;
+}
+
+.input-color{
+  
+    border: 1px solid rgb(182, 182, 182)!important ;
+    background-color: transparent !important;
+}
+.input-color::placeholder{
+   color: rgb(182, 182, 182) !important ; 
+}

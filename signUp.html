@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body class="D-background">
+    
+    <section>
+        <div class="shadow-lg  container text-center py-5 my-5 ">
+            <h1 class="text-color">Smart Login System</h1>
+            <form action="">
+                <input oninput="nameValidation()" type="text" name="name" id="name" class="form-control input-color text-light" placeholder="enter your name">
+                <p class="alert text-danger d-none" id="msgName">Invalid name. It should only contain letters and be 2-50 characters</p>
+                <br>
+                <input  oninput="emailValidation()" type="email" name="email" id="email" class="form-control input-color text-light" placeholder="enter your email">
+                <p class="alert text-danger d-none" id="msgEmail">Invalid email address. Please use a valid format</p>
+                <br>
+                <input oninput="passValidation()" type="password" name="password" id="password" class="form-control input-color text-light" placeholder="enter your password">
+               <p class="alert text-danger d-none" id="msgPass">Password must be at least 8 characters, include uppercase, lowercase, digit, and special character</p>
+                <br>
+                <button class="text-color btn border rounded " id="signup">sign Up</button>
+            </form>
+            <br>
+            <p id="success" class="text-success alert h4 d-none"> success </p>
+            <p id="error" class="text-danger alert h4 d-none">Invalid data entered. Please check your inputs</p>
+            <p id="emailRe" class="text-danger alert h4 d-none">This email is already registered!</p>
+            <p class="text-light h5">You have an account? <a href="./login.html" class="text-decoration-none text-light">Signin </a> </p>
+        </div>
+    </section>
+
+
+</body>
+<script src="js/signUp.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>
